@@ -1,0 +1,16 @@
+@import './inc/_fonts.scss';
+
+// Variables
+@import './inc/_variables.scss';
+
+// Mixins
+@import './inc/_mixins.scss';
+
+// Reset
+@import 'inc/_reset.scss';
+
+// Contents
+@import './inc/__generic.scss';
+@import './inc/__header.scss';
+@import './inc/__footer.scss';
+@import './inc/_base.scss';

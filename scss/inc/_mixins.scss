@@ -1,0 +1,90 @@
+/*==============================
+=            Mixins            =
+==============================*/
+
+// Media Queries
+@mixin media($point) {
+
+    // Breakpoints
+    $maxDesktopBig: "only screen and (max-width: 1920px)";
+    $desktopBig: "only screen and (min-width: 1920px)";
+    $desktop: "only screen and (min-width: 1280px)";
+    $tablette: "only screen and (max-width: 1279px)";
+    $tabletteFooter: "only screen and (max-width: 1225px)";
+    // $tablette: "only screen and (max-width: 1050px) and (min-width: 769px)";
+    $responsive: "only screen and (max-width: 1279px)";
+    $responsiveMenu: "only screen and (max-width: 1200px)";
+    $tabletteDesktop: "only screen and (min-width: 769px)";
+    $mobile: "only screen and (max-width: 768px)";
+    $mobilePetit: "only screen and (max-width: 515px)";
+
+    @if $point==desktop {
+        @media #{$desktop} {
+            @content;
+        }
+    }
+
+    @else if $point==tablette {
+        @media #{$tablette} {
+            @content;
+        }
+    }
+
+    @else if $point==tabletteFooter {
+        @media #{$tabletteFooter} {
+            @content;
+        }
+    }
+
+    @else if $point==mobile {
+        @media #{$mobile} {
+            @content;
+        }
+    }
+
+    @else if $point==mobilePetit {
+        @media #{$mobilePetit} {
+            @content;
+        }
+    }
+
+    @else if $point==desktopBig {
+        @media #{$desktopBig} {
+            @content;
+        }
+    }
+
+    @else if $point==maxDesktopBig {
+        @media #{$maxDesktopBig} {
+            @content;
+        }
+    }
+
+    @else if $point==responsive {
+        @media #{$responsive} {
+            @content;
+        }
+    }
+
+    @else if $point==tabletteDesktop {
+        @media #{$tabletteDesktop} {
+            @content;
+        }
+    }
+
+    @else if $point==responsiveMenu {
+        @media #{$responsiveMenu} {
+            @content;
+        }
+    }
+
+}
+
+// Internet Explorer
+@mixin ie() {
+
+    @media all and (-ms-high-contrast: none),
+    (-ms-high-contrast: active) {
+        @content;
+    }
+}
