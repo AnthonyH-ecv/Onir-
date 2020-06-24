@@ -976,3 +976,64 @@ body {
     font-size: 2.47em; }
   body .size60 {
     font-size: 3.53em; }
+
+.navbar-container {
+  display: flex;
+  padding-top: 40px; }
+  .navbar-container .navbar-brand {
+    margin: 0 66px 0 79px; }
+    .navbar-container .navbar-brand img {
+      width: 136px;
+      height: 57px; }
+  .navbar-container .navbar-nav {
+    width: 1361px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .navbar-container .navbar-nav .navbar-link-wrapper {
+      display: flex;
+      flex-direction: row;
+      align-items: center; }
+      .navbar-container .navbar-nav .navbar-link-wrapper .navbar-link {
+        margin-right: 48px;
+        font-family: "Circular";
+        font-size: 18px;
+        padding: 2px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative; }
+        .navbar-container .navbar-nav .navbar-link-wrapper .navbar-link::before {
+          content: '';
+          display: block;
+          position: absolute;
+          top: -8px;
+          width: 0;
+          height: 8px;
+          background: #F21689;
+          margin-bottom: 2px;
+          transition: width .3s; }
+        .navbar-container .navbar-nav .navbar-link-wrapper .navbar-link:hover::before {
+          width: 100%; }
+        .navbar-container .navbar-nav .navbar-link-wrapper .navbar-link a {
+          display: inline-block;
+          color: inherit;
+          text-decoration: none; }
+    .navbar-container .navbar-nav .btn-portal {
+      width: 250px;
+      height: 45px;
+      background-color: #F21689;
+      border: none;
+      border-radius: 3px;
+      color: #FFF;
+      font-size: 22px;
+      font-family: "Circular";
+      font-weight: bold;
+      padding: 0; }
+      .navbar-container .navbar-nav .btn-portal::after {
+        content: url("../../public/img/arrow.png");
+        margin-left: 9px; }
+      .navbar-container .navbar-nav .btn-portal:hover {
+        cursor: pointer;
+        background-color: #ca0b6f;
+        transition: .3s; }
