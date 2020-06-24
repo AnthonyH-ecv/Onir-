@@ -1,7 +1,7 @@
 footer {
     position: relative;
 
-    &::before{
+    &::before {
         z-index: 3;
         content: '';
         background-image: url('./../img/footer-gauche.png');
@@ -20,7 +20,7 @@ footer {
         position: relative;
         background-color: $lightPurple;
 
-        &::before{
+        &::before {
             content: '';
             background-image: url('./../img/footer-droite.png');
             background-repeat: no-repeat;
@@ -31,10 +31,12 @@ footer {
             top: 0;
             height: 90%;
             width: 50%;
-    
+
         }
 
         .footer-wrapper {
+            z-index: 2;
+            position: relative;
             padding: 5em 0;
             display: flex;
             max-width: 1060px;
@@ -47,6 +49,7 @@ footer {
                 list-style-type: none;
                 padding: 0;
                 margin: 0;
+                margin-right: 126px;
 
                 li {
                     font-size: size(18);
@@ -56,10 +59,48 @@ footer {
                         font-size: size(20);
                         margin-bottom: 39px;
                     }
-                    
-                    a, a:visited{
+
+                    a,
+                    a:visited {
                         color: $white;
                         text-decoration: none;
+
+                    }
+                }
+            }
+
+            .cta-wrapper {
+                flex: 1;
+                align-self: flex-end;
+                text-align: right;
+
+                a {
+                    position: relative;
+                    display: inline-flex;
+                    align-items: center;
+                    font-size: size(22);
+                    color: $white;
+                    padding: .4em .6em;
+                    font-family: $circular;
+                    background-color: $pink;
+                    text-decoration: none;
+                    transition: all .4s ease-in-out;
+
+                    &::after {
+                        content: '';
+                        display: block;
+                        background-image: url('./../img/svg/arrow-right-white.svg');
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        background-position: center;
+                        margin-left: .65em;
+                        height: 1em;
+                        width: .85em;
+                    }
+
+                    &:hover,
+                    &:focus {
+                        background-color: darken($pink, $amount: 5);
 
                     }
                 }

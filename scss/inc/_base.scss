@@ -152,6 +152,7 @@ body {
                                     height: 1em;
                                     width: .85em;
                                     margin-left: .65em;
+                                    transition: all .2s ease-in-out;
                                 }
 
                                 span {
@@ -168,7 +169,24 @@ body {
                                         height: 3px;
                                         width: 100%;
                                         background-color: $pink;
+                                        transition: all .2s ease-in-out;
                                     }
+                                }
+
+                                &:hover,
+                                &:focus {
+                                    &::after {
+                                        margin-left: 1em;
+                                    }
+
+                                    span {
+                                        &::before {
+                                            left: 5px;
+                                            bottom: -10px;
+                                            height: 8px;
+                                        }
+                                    }
+
                                 }
                             }
                         }
@@ -362,6 +380,7 @@ body {
                                 height: 1em;
                                 width: .85em;
                                 margin-left: .65em;
+                                transition: all .2s ease-in-out;
                             }
 
                             span {
@@ -378,7 +397,24 @@ body {
                                     height: 3px;
                                     width: 100%;
                                     background-color: $pink;
+                                    transition: all .2s ease-in-out;
                                 }
+                            }
+
+                            &:hover,
+                            &:focus {
+                                &::after {
+                                    margin-left: 1em;
+                                }
+
+                                span {
+                                    &::before {
+                                        left: 5px;
+                                        bottom: -10px;
+                                        height: 8px;
+                                    }
+                                }
+
                             }
                         }
                     }
@@ -387,5 +423,5 @@ body {
         }
     }
 
-    
+
 }
