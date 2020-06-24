@@ -1,38 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
     <title>Oniré</title>
 </head>
+
 <body>
-    <header>
+    <header class="header">
         <div class="navbar-container">
             <div class="navbar-brand">
-                <img src="" alt="logo Oniré noir">
+                <img src="./img/logo.png" alt="logo Oniré noir">
             </div>
             <nav class="navbar-nav">
-                <a href="Pourquoi ?" class="navbar-link">Pourquoi ?</a>
-                <a href="Pour qui ?" class="navbar-link">Pour qui ?</a>
-                <a href="Nos partenaires" class="navbar-link">Nos partenaires</a>
-                <a href="Nous contacter" class="navbar-link">Nous contacter</a>
+                <div class="navbar-link-wrapper">
+                    <div class="navbar-link">
+                        <a href="#why-onire">Pourquoi ?</a>
+                    </div>
+                    <div class="navbar-link">
+                        <a href="Pour qui ?">Pour qui ?</a>
+                    </div>
+                    <div class="navbar-link">
+                        <a href="Nos partenaires">Nos partenaires</a>
+                    </div>
+                    <div class="navbar-link">
+                        <a href="Nous contacter">Nous contacter</a>
+                    </div>
+                </div>
+                <button class="btn-portal">Accéder au portail</button>
             </nav>
-            <button class="portal">Accéder au portail</button>
         </div>
     </header>
-    <div class="cover-container">
+    <section class="cover-container">
         <div class="cover-wrapper">
             <div class="cover-img-wrapper">
-                <img src="" alt="ordinateur portable qui affiche le portail">
+                <img src="./img/pc.png" alt="ordinateur portable qui affiche le portail">
             </div>
             <div class="cover-title">
                 <h1>Le portail de mise en relation de sociétés et
                     d'infographistes pour la modélisations 3D.</h1>
             </div>
-            <button class="btn-contact">Nous contacter</button>
+            <div class="btn-contact">
+                <a href="">Nous contacter</a>
+            </div>
         </div>
-    </div>
+    </section>
+    <section id="why-onire" class="why-onire-container">
+        <div class="why-onire-wrapper">
+            <div class="why-onire-tag">
+                <span>Pourquoi Oniré ?</span>
+            </div>
+            <div class="why-onire-title">
+                <h1>Un outil simple, en ligne et universel pour la
+                    commande et la gestion des catalogues 3D</h1>
+            </div>
+            <div class="why-onire-card-wrapper">
+                <div class="card">
+                    <div class="card-img">
+                        <img src="./img/pc-icon.svg" alt="un pc">
+                    </div>
+                    <div class="card-text">
+                        <h4>Outil 100% web</h4>
+                        <p>Une seule interface pour manager vos projets de modélisation 3D</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="./img/rule-icon.svg" alt="une règle et un crayon">
+                    </div>
+                    <div class="card-text">
+                        <h4>Sur-mesure</h4>
+                        <p>Une modélisation adaptée à vos besoins</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="./img/puzzle-icon.svg" alt="une pièce de puzzle">
+                    </div>
+                    <div class="card-text">
+                        <h4>Qualité</h4>
+                        <p>La garantie de l’excellence et de la réalisation</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="./img/paper-icon.svg" alt="une fiche validé">
+                    </div>
+                    <div class="card-text">
+                        <h4>Compatibilité</h4>
+                        <p>L’assurance de 3D compatibles sur
+                            tous vos supports : WEB , iOS , ANDROID</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="./img/price-icon.svg" alt="une étiquette de prix">
+                    </div>
+                    <div class="card-text">
+                        <h4>Accessibilité</h4>
+                        <p>Un prix attractif défiant toute concurrence</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section id="pour-qui" class="section-container">
         <div class="section-wrapper">
             <div class="section-title-wrapper">
@@ -111,7 +184,8 @@
                                     Créez votre demande
                                 </h5>
                                 <p>
-                                    Créez votre demande en précisant les caractéristiques du produit et en donnant des photos (dimensions, aspects, etc.). 
+                                    Créez votre demande en précisant les caractéristiques du produit et en donnant des
+                                    photos (dimensions, aspects, etc.).
                                 </p>
                             </li>
                             <li>
@@ -139,7 +213,7 @@
                             </a>
                         </div>
                     </div>
-                </div> 
+                </div>
             </div>
         </div>
     </section>
@@ -246,5 +320,6 @@
             <img src="./img/hilo_logo.png" alt="Logo Hilo">
         </div>
     </footer>
-</body>
+    <script src="./header.js" />
+    </body>
 </html>
