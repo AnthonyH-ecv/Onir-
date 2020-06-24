@@ -1,0 +1,72 @@
+// ===
+/* ANCHOR BODY BASICS */
+// ===
+
+body {
+    font-family: $inter;
+    font-size: 16px;
+    line-height: 1.1em;
+    color: $black;
+    font-weight: normal;
+
+    * {
+        box-sizing: border-box;
+    }
+
+    // Size extends
+
+    .size14 {
+        font-size: .83em;
+    }
+
+    .size15 {
+        font-size: .88em;
+    }
+
+    .size16 {
+        font-size: .94em;
+    }
+
+    .size18 {
+        font-size: 1.058em;
+    }
+
+    .size20 {
+        font-size: 1.176em;
+    }
+
+    .size21 {
+        font-size: 1.235em;
+    }
+
+    .size23 {
+        font-size: 1.35em;
+    }
+
+    .size25 {
+        font-size: 1.47em;
+    }
+
+    .size31 {
+        font-size: 1.82em;
+    }
+
+    .size35 {
+        font-size: 2.05em;
+    }
+
+    .size40 {
+        font-size: 2.35em;
+    }
+
+    .size42 {
+        font-size: 2.47em;
+    }
+
+    .size60 {
+        font-size: 3.53em;
+    }
+
+    
+}
+
