@@ -493,6 +493,7 @@ big {
 # Elements
 --------------------------------------------------------------*/
 html {
+  scroll-behavior: smooth;
   box-sizing: border-box; }
 
 *,
@@ -1156,3 +1157,6 @@ body {
           font-size: 16px;
           font-weight: 400;
           font-family: "Inter"; }
+
+html {
+  scroll-behavior: smooth; }
