@@ -1038,43 +1038,106 @@ body {
         background-color: #ca0b6f;
         transition: .3s; }
 
-.cover-container .cover-wrapper {
-  width: 963px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-  .cover-container .cover-wrapper .cover-img-wrapper img {
+.cover-container {
+  padding: 0 0 105px; }
+  .cover-container .cover-wrapper {
     width: 963px;
-    height: 552px; }
-  .cover-container .cover-wrapper .cover-title {
-    padding: 0 30px;
-    margin: 50px 0 20px; }
-    .cover-container .cover-wrapper .cover-title h1 {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .cover-container .cover-wrapper .cover-img-wrapper img {
+      width: 963px;
+      height: 552px; }
+    .cover-container .cover-wrapper .cover-title {
+      padding: 0 30px;
+      margin: 50px 0 20px; }
+      .cover-container .cover-wrapper .cover-title h1 {
+        font-size: 30px;
+        font-family: "Circular";
+        font-weight: bold;
+        text-align: center;
+        color: inherit;
+        line-height: 40px;
+        margin: 0; }
+    .cover-container .cover-wrapper .btn-contact a {
+      text-decoration: none;
+      font-size: 18px;
+      font-family: "Circular";
+      border-bottom-width: 50px;
+      color: inherit;
+      position: relative; }
+      .cover-container .cover-wrapper .btn-contact a::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -4px;
+        width: 105%;
+        height: 3px;
+        background: #F21689; }
+    .cover-container .cover-wrapper .btn-contact::after {
+      content: url("../../public/img/arrow-black.png");
+      margin-left: 20px;
+      position: relative;
+      top: 3px; }
+
+.why-onire-container {
+  padding: 66px 0 138px;
+  background: url("../../public/img/bg-why-onire.svg") no-repeat;
+  background-position: -125px 14px; }
+  .why-onire-container .why-onire-wrapper {
+    width: 1361px;
+    margin: 0 auto; }
+  .why-onire-container .why-onire-tag {
+    font-size: 14px;
+    font-family: "Circular";
+    font-weight: 500;
+    color: #56CEE0;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    background-color: #FFF;
+    padding-top: 10px; }
+    .why-onire-container .why-onire-tag::before {
+      content: "";
+      display: block;
+      width: 14px;
+      height: 1px;
+      background-color: #56CEE0;
+      margin-right: 10px; }
+  .why-onire-container .why-onire-title {
+    max-width: 640px;
+    background: #FFF;
+    padding: 10px 0; }
+    .why-onire-container .why-onire-title h1 {
       font-size: 30px;
       font-family: "Circular";
-      font-weight: bold;
-      text-align: center;
-      color: inherit;
-      line-height: 40px;
-      margin: 0; }
-  .cover-container .cover-wrapper .btn-contact a {
-    text-decoration: none;
-    font-size: 18px;
-    font-family: "Circular";
-    border-bottom-width: 50px;
-    color: inherit;
-    position: relative; }
-    .cover-container .cover-wrapper .btn-contact a::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      bottom: -4px;
-      width: 105%;
-      height: 3px;
-      background: #F21689; }
-  .cover-container .cover-wrapper .btn-contact::after {
-    content: url("../../public/img/arrow-black.png");
-    margin-left: 20px;
-    position: relative;
-    top: 3px; }
+      font-weight: 500;
+      margin: 0;
+      line-height: 40px; }
+  .why-onire-container .why-onire-card-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 65px; }
+    .why-onire-container .why-onire-card-wrapper .card {
+      width: 225px;
+      height: 275px;
+      background-color: #FFF;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px 12px; }
+      .why-onire-container .why-onire-card-wrapper .card .card-img {
+        width: 90px;
+        height: 85px; }
+        .why-onire-container .why-onire-card-wrapper .card .card-img img {
+          width: 100%;
+          height: 100%; }
+      .why-onire-container .why-onire-card-wrapper .card .card-text {
+        text-align: center; }
+        .why-onire-container .why-onire-card-wrapper .card .card-text h4 {
+          font-size: 16px;
+          font-weight: 400;
+          font-family: "Inter"; }
