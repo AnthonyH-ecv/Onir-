@@ -493,7 +493,6 @@ big {
 # Elements
 --------------------------------------------------------------*/
 html {
-  scroll-behavior: smooth;
   box-sizing: border-box; }
 
 *,
@@ -978,6 +977,9 @@ body {
   body .size60 {
     font-size: 3.53em; }
 
+html {
+  scroll-behavior: smooth; }
+
 .header {
   position: fixed;
   width: 100%; }
@@ -992,7 +994,7 @@ body {
 
 .navbar-container {
   display: flex;
-  padding-top: 40px;
+  padding: 40px 15px 0 0;
   transition: .5s; }
   .navbar-container .navbar-brand {
     margin: 0 66px 0 79px; }
@@ -1057,14 +1059,17 @@ body {
   background: url("../../public/img/bg-cover.png") no-repeat;
   background-size: 100%; }
   .cover-container .cover-wrapper {
-    width: 963px;
+    max-width: 963px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center; }
-    .cover-container .cover-wrapper .cover-img-wrapper img {
-      width: 963px;
-      height: 552px; }
+    .cover-container .cover-wrapper .cover-img-wrapper {
+      width: 100%; }
+      .cover-container .cover-wrapper .cover-img-wrapper img {
+        width: 100%;
+        height: auto;
+        object-fit: cover; }
     .cover-container .cover-wrapper .cover-title {
       padding: 0 30px;
       margin: 50px 0 20px; }
@@ -1102,8 +1107,9 @@ body {
   background: url("../../public/img/bg-why-onire.svg") no-repeat;
   background-position: -125px 14px; }
   .why-onire-container .why-onire-wrapper {
-    width: 1361px;
-    margin: 0 auto; }
+    max-width: 1361px;
+    margin: 0 auto;
+    padding: 0 15px; }
   .why-onire-container .why-onire-tag {
     font-size: 14px;
     font-family: "Circular";
@@ -1134,7 +1140,9 @@ body {
   .why-onire-container .why-onire-card-wrapper {
     display: flex;
     justify-content: space-between;
-    margin-top: 65px; }
+    flex-wrap: wrap;
+    margin-top: 45px;
+    width: 100%; }
     .why-onire-container .why-onire-card-wrapper .card {
       width: 225px;
       height: 275px;
@@ -1144,7 +1152,8 @@ body {
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 30px 12px; }
+      padding: 30px 12px;
+      margin-top: 20px; }
       .why-onire-container .why-onire-card-wrapper .card .card-img {
         width: 90px;
         height: 85px; }
@@ -1157,6 +1166,3 @@ body {
           font-size: 16px;
           font-weight: 400;
           font-family: "Inter"; }
-
-html {
-  scroll-behavior: smooth; }
