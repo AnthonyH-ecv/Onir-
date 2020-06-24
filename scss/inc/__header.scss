@@ -1,6 +1,23 @@
+.header {
+    position: fixed;
+    width: 100%;
+}
+
+.header.scroll {
+    background-color: $white;
+    box-shadow: 0 0 10px rgba(#000, .5);
+    transition: .5s;
+
+    .navbar-container {
+        padding-top: 15px;
+        transition: .5s;
+    }
+}
+
 .navbar-container {
     display: flex;
     padding-top: 40px;
+    transition: .5s;
 
     .navbar-brand {
         margin: 0 66px 0 79px;

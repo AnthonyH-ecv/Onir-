@@ -977,9 +977,22 @@ body {
   body .size60 {
     font-size: 3.53em; }
 
+.header {
+  position: fixed;
+  width: 100%; }
+
+.header.scroll {
+  background-color: #FFF;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: .5s; }
+  .header.scroll .navbar-container {
+    padding-top: 15px;
+    transition: .5s; }
+
 .navbar-container {
   display: flex;
-  padding-top: 40px; }
+  padding-top: 40px;
+  transition: .5s; }
   .navbar-container .navbar-brand {
     margin: 0 66px 0 79px; }
     .navbar-container .navbar-brand img {
@@ -1039,7 +1052,9 @@ body {
         transition: .3s; }
 
 .cover-container {
-  padding: 0 0 105px; }
+  padding: 260px 0 100px;
+  background: url("../../public/img/bg-cover.png") no-repeat;
+  background-size: 100%; }
   .cover-container .cover-wrapper {
     width: 963px;
     margin: 0 auto;
