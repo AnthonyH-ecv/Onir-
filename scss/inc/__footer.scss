@@ -16,6 +16,22 @@ footer {
 
     }
 
+    &::after {
+        content: '';
+        background-image: url('./../img/svg/wave.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 5em;
+        width: 8em;
+        transform: translateY(-125%);
+
+    }
+
     .top-footer {
         position: relative;
         background-color: $lightPurple;
@@ -54,6 +70,7 @@ footer {
                 li {
                     font-size: size(18);
                     margin-bottom: 16px;
+                    line-height: 110%;
 
                     &.title {
                         font-size: size(20);

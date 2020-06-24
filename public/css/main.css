@@ -1158,6 +1158,19 @@ footer {
     bottom: 0;
     height: 90%;
     width: 20%; }
+  footer::after {
+    content: '';
+    background-image: url("./../img/svg/wave.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 5em;
+    width: 8em;
+    transform: translateY(-125%); }
   footer .top-footer {
     position: relative;
     background-color: #5E60CF; }
@@ -1189,7 +1202,8 @@ footer {
         margin-right: 126px; }
         footer .top-footer .footer-wrapper ul li {
           font-size: 1.125em;
-          margin-bottom: 16px; }
+          margin-bottom: 16px;
+          line-height: 110%; }
           footer .top-footer .footer-wrapper ul li.title {
             font-size: 1.25em;
             margin-bottom: 39px; }
