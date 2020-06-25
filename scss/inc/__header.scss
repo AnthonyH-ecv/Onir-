@@ -23,7 +23,26 @@ html {
     }
 }
 
+.header.header-light {
+    .brand {
+    display: none;
+    }
+
+    .brand-light {
+        display: block;
+    }
+}
+
 .header.scroll.header-light {
+    .navbar-brand {
+        .brand {
+            display: block;
+        }
+
+        .brand-light {
+            display: none;
+        }
+    }
     .navbar-link.light {
         a {
             color: #000 !important;

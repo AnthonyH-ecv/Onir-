@@ -971,6 +971,18 @@ html {
       .header.scroll .navbar-container {
         padding: 15px 110px; } }
 
+.header.header-light .brand {
+  display: none; }
+
+.header.header-light .brand-light {
+  display: block; }
+
+.header.scroll.header-light .navbar-brand .brand {
+  display: block; }
+
+.header.scroll.header-light .navbar-brand .brand-light {
+  display: none; }
+
 .header.scroll.header-light .navbar-link.light a {
   color: #000 !important; }
 
@@ -1367,7 +1379,7 @@ html {
           height: 30%; }
         .choose-project-container .choose-project-wrapper .choose-card-wrapper .choose-card p {
           margin: 0 0 10px;
-          font-size: 18px;
+          font-size: 16px;
           font-family: "Inter";
           font-weight: 400;
           height: 70%; }
