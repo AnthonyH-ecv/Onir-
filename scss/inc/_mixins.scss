@@ -88,3 +88,8 @@
         @content;
     }
 }
+
+// Calcul des tailles
+@function size($value) {
+    @return ($value / $defaultFontSize) * 1em;
+}
