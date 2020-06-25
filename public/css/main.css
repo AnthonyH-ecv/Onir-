@@ -1034,7 +1034,7 @@ html {
 
 .cover-container {
   padding: 260px 0 100px;
-  background: url("../../public/img/bg-cover.png") no-repeat;
+  background: url("./../img/bg-cover.png") no-repeat;
   background-size: 100%; }
   @media screen and (max-width: 480px) {
     .cover-container {
@@ -1108,7 +1108,7 @@ html {
 
 .why-onire-container {
   padding: 66px 0 138px;
-  background: url("../../public/img/bg-why-onire.svg") no-repeat;
+  background: url("./../img/bg-why-onire.svg") no-repeat;
   background-position: -125px 14px; }
   .why-onire-container .why-onire-wrapper {
     max-width: 1361px;
