@@ -971,6 +971,9 @@ html {
       .header.scroll .navbar-container {
         padding: 15px 110px; } }
 
+.header.scroll.header-light .navbar-link.light a {
+  color: #000 !important; }
+
 .navbar-container {
   display: flex;
   padding: 40px 30px 0;
