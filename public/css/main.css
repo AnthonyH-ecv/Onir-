@@ -1448,7 +1448,7 @@ body .section-container {
       display: block;
       background-image: url("./../img/svg/purple-point-grid.svg");
       background-repeat: no-repeat;
-      height: 200px;
+      height: 260px;
       width: 300px;
       position: absolute;
       left: 0;
@@ -1469,6 +1469,53 @@ body .section-container {
       body .section-container#partenaire .section-title-wrapper h2 {
         position: relative;
         z-index: 1; }
+    body .section-container#partenaire .slider-container {
+      position: relative;
+      margin-top: 4em; }
+      body .section-container#partenaire .slider-container::before {
+        z-index: 0;
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translateY(-50%) translateX(-50%);
+        height: calc(100% + 2em);
+        width: calc(100% + 2em);
+        background-color: #FFF; }
+      body .section-container#partenaire .slider-container .slider-wrapper {
+        position: relative;
+        padding: 1em 0; }
+        body .section-container#partenaire .slider-container .slider-wrapper .slick-track {
+          display: flex;
+          align-items: center; }
+        body .section-container#partenaire .slider-container .slider-wrapper .brand img {
+          max-width: 120px;
+          max-height: 60px;
+          margin: auto; }
+        body .section-container#partenaire .slider-container .slider-wrapper .prevArrow {
+          cursor: pointer;
+          z-index: 2;
+          position: absolute;
+          top: 0;
+          left: 0;
+          background-color: #FFF;
+          height: 100%;
+          width: 2em;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+        body .section-container#partenaire .slider-container .slider-wrapper .nextArrow {
+          cursor: pointer;
+          z-index: 2;
+          position: absolute;
+          top: 0;
+          right: 0;
+          background-color: #FFF;
+          height: 100%;
+          width: 2em;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
   body .section-container#contact .section-title-wrapper {
     margin-bottom: 5em; }
   body .section-container#contact .form-container {
