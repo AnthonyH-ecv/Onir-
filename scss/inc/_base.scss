@@ -8,9 +8,14 @@ body {
             max-width: 1360px;
             margin: 0 auto;
 
+            
+            @media only screen and (max-width:1361px) {
+                
+                padding: 0 30px;
+            }
+
             .section-title-wrapper {
                 font-family: $circular;
-                font-weight: 500;
                 color: $white;
 
                 h2 {
@@ -18,6 +23,7 @@ body {
                     line-height: 110%;
                     margin-bottom: size(25);
                     max-width: 650px;
+                    font-weight: 500;
 
                     span {
                         position: relative;
@@ -43,6 +49,13 @@ body {
             .solutions-container {
                 display: flex;
                 justify-content: space-around;
+
+                
+                @media only screen and (max-width:1210px) {
+                    
+                    flex-direction: column;
+                    align-items: center;
+                }
 
                 .solution-wrapper {
                     max-width: 558px;
@@ -201,6 +214,8 @@ body {
             background: linear-gradient(0.25turn, $lightPurple, $purple);
             border-top-left-radius: 280px;
 
+
+
             &::before {
                 content: '';
                 position: absolute;
@@ -213,6 +228,19 @@ body {
                 width: 100%;
                 height: 90%;
                 display: block;
+            }
+
+            
+            @media only screen and (max-width:1450px) {
+                
+                border-top-left-radius: 0;
+            }
+
+            @media only screen and (max-width:1210px) {
+                
+                &::before{
+                    display: none;
+                }
             }
         }
 
@@ -272,7 +300,8 @@ body {
                     z-index: 1;
                 }
             }
-            .slider-container{
+
+            .slider-container {
                 position: relative;
                 margin-top: 4em;
 
@@ -288,25 +317,26 @@ body {
                     background-color: $white;
 
                 }
-                .slider-wrapper{
+
+                .slider-wrapper {
                     position: relative;
                     padding: 1em 0;
 
-                    .slick-track{
+                    .slick-track {
                         display: flex;
                         align-items: center;
                     }
 
-                    .brand{
+                    .brand {
 
-                        img{
+                        img {
                             max-width: 120px;
                             max-height: 60px;
                             margin: auto;
                         }
                     }
 
-                    .prevArrow{
+                    .prevArrow {
                         cursor: pointer;
                         z-index: 2;
                         position: absolute;
@@ -321,7 +351,7 @@ body {
 
                     }
 
-                    .nextArrow{
+                    .nextArrow {
                         cursor: pointer;
                         z-index: 2;
                         position: absolute;
@@ -377,11 +407,23 @@ body {
                     flex-wrap: wrap;
                     justify-content: space-between;
 
+                    @media only screen and (max-width: 1330px){
+                        max-width: 85%;
+                    }
+
+                    @media only screen and (max-width: 1030px){
+                        max-width: 75%;
+                    }
+
                     fieldset {
                         flex-basis: 49%;
                         padding: 0;
                         margin: 0 0 size(32);
                         border: none;
+
+                        @media only screen and (max-width: 1030px){
+                            flex-basis: 100%;
+                        }
 
                         label {
                             display: block;
