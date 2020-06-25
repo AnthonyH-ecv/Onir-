@@ -965,20 +965,29 @@ html {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   transition: .5s; }
   .header.scroll .navbar-container {
-    padding-top: 15px;
+    padding: 15px 30px;
     transition: .5s; }
+    @media screen and (min-width: 1361px) {
+      .header.scroll .navbar-container {
+        padding: 15px 110px; } }
 
 .navbar-container {
   display: flex;
   padding: 40px 30px 0;
   transition: .5s; }
+  @media screen and (min-width: 1361px) {
+    .navbar-container {
+      padding: 40px 110px 0; } }
   .navbar-container .navbar-brand {
     min-width: 136px;
     height: 57px;
-    margin: 0 66px 0 auto; }
+    margin: 0 66px 0 78px; }
     .navbar-container .navbar-brand img {
       width: 100%;
       height: 100%; }
+    @media screen and (max-width: 1361px) {
+      .navbar-container .navbar-brand {
+        margin: 0 66px 0 auto; } }
   .navbar-container .navbar-nav {
     width: 1361px;
     display: flex;
@@ -1014,16 +1023,13 @@ html {
           color: inherit;
           text-decoration: none; }
     .navbar-container .navbar-nav .btn-portal {
-      width: 250px;
-      height: 45px;
       background-color: #F21689;
       border: none;
       border-radius: 3px;
       color: #FFF;
       font-size: 22px;
       font-family: "Circular";
-      font-weight: bold;
-      padding: 0; }
+      padding: 8px 13px; }
       .navbar-container .navbar-nav .btn-portal::after {
         content: url("../../public/img/arrow-white.png");
         margin-left: 9px; }
@@ -1033,7 +1039,7 @@ html {
         transition: .3s; }
 
 .cover-container {
-  padding: 260px 0 100px;
+  padding: 160px 0 100px;
   background: url("./../img/bg-cover.png") no-repeat;
   background-size: 100%; }
   @media screen and (max-width: 480px) {
@@ -1049,6 +1055,9 @@ html {
     .cover-container {
       background-size: 120%;
       background-position: -115px 0; } }
+  @media screen and (min-width: 1362px) {
+    .cover-container {
+      padding-top: 260px; } }
   .cover-container .cover-wrapper {
     max-width: 963px;
     margin: 0 auto;
@@ -1061,12 +1070,18 @@ html {
     @media screen and (min-width: 480px) and (max-width: 768px) {
       .cover-container .cover-wrapper {
         padding: 0 50px; } }
+    @media screen and (min-width: 1361px) {
+      .cover-container .cover-wrapper {
+        margin: 0 auto 170px; } }
     .cover-container .cover-wrapper .cover-img-wrapper {
       width: 100%; }
       .cover-container .cover-wrapper .cover-img-wrapper img {
         width: 100%;
         height: auto;
         object-fit: cover; }
+      @media screen and (max-width: 1361px) {
+        .cover-container .cover-wrapper .cover-img-wrapper {
+          width: 70%; } }
     .cover-container .cover-wrapper .cover-title {
       padding: 0 30px;
       margin: 50px 0 20px; }
@@ -1098,13 +1113,23 @@ html {
         bottom: -4px;
         width: 105%;
         height: 3px;
-        background: #F21689; }
+        background: #F21689;
+        transition: .3s; }
     .cover-container .cover-wrapper .btn-contact::after {
       content: url("../../public/img/arrow-black.png");
       margin-left: 20px;
       position: relative;
       top: 3px;
-      z-index: -1; }
+      z-index: -1;
+      transition: .8s; }
+    .cover-container .cover-wrapper .btn-contact:hover::after {
+      left: 5px;
+      transition: .8s ease-in-out; }
+    .cover-container .cover-wrapper .btn-contact:hover a::after {
+      bottom: -8px;
+      left: 5px;
+      height: 8px;
+      transition: 0.3s; }
 
 .why-onire-container {
   padding: 66px 0 138px;
@@ -1112,8 +1137,10 @@ html {
   background-position: -125px 14px; }
   .why-onire-container .why-onire-wrapper {
     max-width: 1361px;
-    margin: 0 auto;
-    padding: 0 30px; }
+    margin: 0 auto; }
+    @media screen and (max-width: 1361px) {
+      .why-onire-container .why-onire-wrapper {
+        padding: 0 30px; } }
   .why-onire-container .why-onire-tag {
     font-size: 14px;
     font-family: "Circular";
