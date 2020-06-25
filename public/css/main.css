@@ -1286,8 +1286,7 @@ html {
 .choose-project-container .choose-card-wrapper {
   display: flex;
   flex-direction: column;
-  max-width: 1361px;
-  padding: 0 70px; }
+  max-width: 1361px; }
 
 footer {
   position: relative; }
