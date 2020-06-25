@@ -2,13 +2,37 @@
     padding: 260px 0 100px;
     background: url('../../public/img/bg-cover.png') no-repeat;
     background-size: 100%;
+
+    @media screen and (max-width: 480px) {
+        padding: 170px 0 100px;
+        background-size: 245%;
+        background-position: 100% 0;
+    }
     
+    @media screen and (min-width: 768px) and (max-width: 978px) {
+        background-size: 200%;
+        background-position: 80% 0;
+    }
+
+    @media screen and (min-width: 980) and (max-width: 1361px) {
+        background-size: 120%;
+        background-position: -115px 0;
+    }
+
     .cover-wrapper {
         max-width: 963px;
         margin: 0 auto;
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        @media screen and (max-width: 480px) {
+            padding: 0 15px;
+        }
+
+        @media screen and (min-width: 480px) and (max-width: 768px) {
+            padding: 0 50px;
+        }
 
         .cover-img-wrapper {
             width: 100%;
@@ -32,6 +56,13 @@
                 color: inherit;
                 line-height: 40px;
                 margin: 0;
+            }
+
+            @media screen and (max-width: 480px) {
+                padding: 0;
+              h1 {
+                  font-size: 24px;
+              }   
             }
         }
 
