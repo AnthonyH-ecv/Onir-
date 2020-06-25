@@ -1090,7 +1090,7 @@ html {
         width: 100%;
         height: auto;
         object-fit: cover; }
-      @media screen and (min-width: 768px) and (max-width: 1440px) {
+      @media screen and (min-width: 768px) and (max-width: 1630px) {
         .cover-container .cover-wrapper .cover-img-wrapper {
           width: 70%; } }
     .cover-container .cover-wrapper .cover-title {
@@ -1272,7 +1272,8 @@ html {
       font-weight: bold;
       line-height: 40px;
       font-family: "Circular";
-      color: #FFF; }
+      color: #FFF;
+      background-color: #5E60CF; }
       .cover-info-container .cover-info-wrapper .cover-info-title h1 span {
         font-size: 20px;
         font-weight: normal;
@@ -1304,9 +1305,16 @@ html {
         justify-content: space-evenly; }
         .cover-info-container .cover-info-wrapper .cover-info-img-wrapper {
           width: 50%; } }
+  @media screen and (min-width: 1441px) {
+    .cover-info-container {
+      background-size: cover;
+      background-position: 70% 0; }
+      .cover-info-container .cover-info-wrapper {
+        justify-content: space-evenly; } }
 
 .choose-project-container {
-  padding: 40px; }
+  padding: 40px;
+  margin-bottom: 150px; }
   .choose-project-container .choose-project-wrapper {
     display: flex;
     flex-direction: column;
@@ -1346,7 +1354,7 @@ html {
         left: -21%; }
       .choose-project-container .choose-project-wrapper .choose-card-wrapper .choose-card {
         width: 277px;
-        height: 186px;
+        height: 215px;
         padding: 28px 26px 0;
         box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
         background: #FFF;
