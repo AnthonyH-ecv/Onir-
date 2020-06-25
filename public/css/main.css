@@ -1272,7 +1272,8 @@ html {
       font-weight: bold;
       line-height: 40px;
       font-family: "Circular";
-      color: #FFF; }
+      color: #FFF;
+      background-color: #5E60CF; }
       .cover-info-container .cover-info-wrapper .cover-info-title h1 span {
         font-size: 20px;
         font-weight: normal;
@@ -1304,6 +1305,12 @@ html {
         justify-content: space-evenly; }
         .cover-info-container .cover-info-wrapper .cover-info-img-wrapper {
           width: 50%; } }
+  @media screen and (min-width: 1441px) {
+    .cover-info-container {
+      background-size: cover;
+      background-position: 70% 0; }
+      .cover-info-container .cover-info-wrapper {
+        justify-content: space-evenly; } }
 
 .choose-project-container {
   padding: 40px;

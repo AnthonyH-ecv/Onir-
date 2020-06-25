@@ -22,6 +22,7 @@
                 line-height: 40px;
                 font-family: $circular;
                 color: $white;
+                background-color: $lightPurple;
 
                 span{
                     font-size: 20px;
@@ -70,6 +71,15 @@
             .cover-info-img-wrapper {
                 width: 50%;
             }
+        }
+    }
+
+    @media screen and (min-width: 1441px){
+        background-size: cover;
+        background-position: 70% 0;
+
+        .cover-info-wrapper {
+            justify-content: space-evenly;
         }
     }
 }
