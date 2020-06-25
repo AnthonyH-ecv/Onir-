@@ -1184,7 +1184,7 @@ html {
       position: absolute;
       left: 50%;
       top: 50%;
-      transform: translateY(-50%) translateX(-50%);
+      transform: translateY(-60%) translateX(-50%);
       height: calc(100% + 2em);
       width: calc(100% + 2em);
       background-color: #FFF; }
