@@ -1,7 +1,94 @@
 .choose-project-container {
-    .choose-card-wrapper {
+    padding: 40px;
+    
+    .choose-project-wrapper {
         display: flex;
         flex-direction: column;
         max-width: 1361px;
+        margin: 0 auto;
+
+        .choose-title {
+            h1 {
+                font-size: 30px;
+                font-family: $circular;
+                font-weight: 900;
+                color: $lightPurple;
+                line-height: 40px;
+                margin: 0 0 70px;
+                position: relative;
+                background: $white;
+
+                &::before {
+                    content: url("./../img/vague.png");
+                    position: absolute;
+                    z-index: -1;
+                    left: -8%;
+                    top: -50%;
+                }
+            }
+        }
+
+        
+    
+        .choose-card-wrapper {
+            display: flex;
+            justify-content: space-between;
+            padding-left: 100px;
+
+            .card-1::before {
+                content: url("./../img/1.png");
+            }
+
+            .card-2::before {
+                content: url("./../img/2.png");
+                left: -30% !important;
+            }
+
+            .card-3::before {
+                content: url("./../img/3.png");
+                left: -30% !important;
+            }
+
+            .card-1::before,.card-2::before, .card-3::before {
+                position: absolute;
+                z-index: -1;
+                top: -105px;
+                left: -21%;
+            }
+
+            .choose-card {
+                width: 277px;
+                height: 186px;
+                padding: 28px 26px 0;
+                box-shadow: 0 0 15px rgba(#000, 0.2);
+                background: $white;
+                position: relative;
+
+                h4 {
+                    font-size: 18px;
+                    font-family: $inter;
+                    font-weight: 400;
+                    margin: 0;
+                    height: 30%;
+                }
+
+                p {
+                    margin: 0 0 10px;
+                    font-size: 18px;
+                    font-family: $inter;
+                    font-weight: 400;
+                    height: 70%;
+
+                    &::before {
+                        content:"";
+                        display: block;
+                        background-color: $lightBlue;
+                        height: 3px;
+                        width: 38px;
+                        margin: 0 0 15px;
+                    }
+                }
+            }
+        }
     }
 }
