@@ -1306,7 +1306,8 @@ html {
           width: 50%; } }
 
 .choose-project-container {
-  padding: 40px; }
+  padding: 40px;
+  margin-bottom: 150px; }
   .choose-project-container .choose-project-wrapper {
     display: flex;
     flex-direction: column;
@@ -1346,7 +1347,7 @@ html {
         left: -21%; }
       .choose-project-container .choose-project-wrapper .choose-card-wrapper .choose-card {
         width: 277px;
-        height: 186px;
+        height: 215px;
         padding: 28px 26px 0;
         box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
         background: #FFF;

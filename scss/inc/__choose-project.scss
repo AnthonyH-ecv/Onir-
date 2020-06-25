@@ -1,5 +1,6 @@
 .choose-project-container {
     padding: 40px;
+    margin-bottom: 150px;
 
     .choose-project-wrapper {
         display: flex;
@@ -58,7 +59,7 @@
 
             .choose-card {
                 width: 277px;
-                height: 186px;
+                height: 215px;
                 padding: 28px 26px 0;
                 box-shadow: 0 0 15px rgba(#000, 0.2);
                 background: $white;
