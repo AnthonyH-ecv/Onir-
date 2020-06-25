@@ -17,7 +17,7 @@
   "bugs": {
     "url": "https://github.com/AnthonyH-ecv/Onire/issues"
   },
-  "homepage": "https://anthonyh-ecv.github.io/Onire",
+  "homepage": "https://anthonyh-ecv.github.io/Onire/",
   "devDependencies": {
     "node-sass": "^4.14.1",
     "nodemon": "^2.0.4"
