@@ -57,6 +57,12 @@ html {
             flex-direction: row;
             align-items: center;
 
+            .navbar-link.light {
+                a {
+                   color: $white; 
+                }
+            }
+
             .navbar-link {
                 margin-right: 48px;
                 font-family: $circular;

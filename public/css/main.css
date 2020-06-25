@@ -997,6 +997,8 @@ html {
       display: flex;
       flex-direction: row;
       align-items: center; }
+      .navbar-container .navbar-nav .navbar-link-wrapper .navbar-link.light a {
+        color: #FFF; }
       .navbar-container .navbar-nav .navbar-link-wrapper .navbar-link {
         margin-right: 48px;
         font-family: "Circular";
@@ -1057,7 +1059,7 @@ html {
       background-position: -115px 0; } }
   @media screen and (min-width: 1362px) {
     .cover-container {
-      padding-top: 260px; } }
+      padding-top: 210px; } }
   .cover-container .cover-wrapper {
     max-width: 963px;
     margin: 0 auto;
@@ -1202,6 +1204,45 @@ html {
           font-size: 16px;
           font-weight: 400;
           font-family: "Inter"; }
+
+.cover-info-container {
+  padding-top: 153px; }
+  .cover-info-container:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: purple;
+    width: 100%;
+    height: 565px;
+    z-index: -1; }
+  .cover-info-container .cover-info-wrapper {
+    max-width: 1361px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 55px; }
+    .cover-info-container .cover-info-wrapper .cover-info-title h1 {
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      font-size: 30px;
+      font-weight: bold;
+      line-height: 40px;
+      font-family: "Circular";
+      color: #FFF; }
+      .cover-info-container .cover-info-wrapper .cover-info-title h1 span {
+        font-size: 20px;
+        font-weight: normal;
+        font-family: inherit;
+        color: inherit; }
+
+.choose-project-container .choose-card-wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 1361px; }
 
 footer {
   position: relative; }
