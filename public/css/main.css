@@ -1275,6 +1275,32 @@ html {
         font-weight: normal;
         font-family: inherit;
         color: inherit; }
+  @media screen and (max-width: 480px) {
+    .cover-info-container {
+      background-size: 285%;
+      background-position: 80% -68px; }
+      .cover-info-container .cover-info-wrapper {
+        justify-content: space-evenly; }
+        .cover-info-container .cover-info-wrapper .cover-info-img-wrapper {
+          display: none; }
+        .cover-info-container .cover-info-wrapper .cover-info-title {
+          margin-bottom: 10px; } }
+  @media screen and (min-width: 480px) and (max-width: 768px) {
+    .cover-info-container {
+      background-size: 168%;
+      background-position: 80% -68px; }
+      .cover-info-container .cover-info-wrapper {
+        justify-content: space-evenly; }
+        .cover-info-container .cover-info-wrapper .cover-info-img-wrapper {
+          width: 50%; } }
+  @media screen and (min-width: 769px) and (max-width: 1440px) {
+    .cover-info-container {
+      background-size: 130%;
+      background-position: 80% -68px; }
+      .cover-info-container .cover-info-wrapper {
+        justify-content: space-evenly; }
+        .cover-info-container .cover-info-wrapper .cover-info-img-wrapper {
+          width: 50%; } }
 
 .choose-project-container {
   padding: 40px; }
@@ -1341,6 +1367,28 @@ html {
             height: 3px;
             width: 38px;
             margin: 0 0 15px; }
+  @media screen and (max-width: 480px) {
+    .choose-project-container {
+      padding: 40px 10px; }
+      .choose-project-container .choose-project-wrapper .choose-card-wrapper {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-left: 0;
+        width: 100%; }
+        .choose-project-container .choose-project-wrapper .choose-card-wrapper .choose-card {
+          height: 230px;
+          margin: 10px; } }
+  @media screen and (min-width: 480px) and (max-width: 768px) {
+    .choose-project-container {
+      padding: 40px 10px; }
+      .choose-project-container .choose-project-wrapper .choose-card-wrapper {
+        justify-content: space-around;
+        padding-left: 0;
+        width: 100%; }
+        .choose-project-container .choose-project-wrapper .choose-card-wrapper .choose-card {
+          height: 230px;
+          margin: 10px; } }
 
 footer {
   position: relative; }

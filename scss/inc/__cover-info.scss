@@ -32,4 +32,44 @@
             }
         }
     }
+
+    @media screen and (max-width: 480px) {
+        background-size: 285%;
+        background-position: 80% -68px;
+
+        .cover-info-wrapper {
+            justify-content: space-evenly;
+            .cover-info-img-wrapper {
+                display: none;
+            }
+        
+            .cover-info-title {
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    @media screen and (min-width: 480px) and (max-width: 768px ) {
+        background-size: 168%;
+        background-position: 80% -68px;
+
+        .cover-info-wrapper {
+            justify-content: space-evenly;
+            .cover-info-img-wrapper {
+                width: 50%;
+            }
+        }
+    }
+
+    @media screen and (min-width: 769px) and (max-width: 1440px) {
+        background-size: 130%;
+        background-position: 80% -68px;
+
+        .cover-info-wrapper {
+            justify-content: space-evenly;
+            .cover-info-img-wrapper {
+                width: 50%;
+            }
+        }
+    }
 }

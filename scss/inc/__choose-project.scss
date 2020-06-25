@@ -1,6 +1,6 @@
 .choose-project-container {
     padding: 40px;
-    
+
     .choose-project-wrapper {
         display: flex;
         flex-direction: column;
@@ -87,6 +87,41 @@
                         width: 38px;
                         margin: 0 0 15px;
                     }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        padding: 40px 10px;
+        
+        .choose-project-wrapper {
+            .choose-card-wrapper {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding-left: 0;
+                width: 100%;
+
+                .choose-card {
+                    height: 230px;
+                    margin: 10px;
+                }
+            }
+        }
+    }
+    @media screen and (min-width: 480px) and (max-width: 768px) {
+        padding: 40px 10px;
+
+        .choose-project-wrapper {
+            .choose-card-wrapper {
+                justify-content: space-around;
+                padding-left: 0;
+                width: 100%;
+
+                .choose-card {
+                    height: 230px;
+                    margin: 10px;
                 }
             }
         }
