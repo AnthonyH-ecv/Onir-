@@ -52,10 +52,19 @@ html {
         justify-content: space-between;
         align-items: center;
 
+        @media screen and (max-width: 1106px) {
+            justify-content: flex-end;   
+        }
+
         .navbar-link-wrapper {
             display: flex;
             flex-direction: row;
             align-items: center;
+
+            
+            @media screen and (max-width: 1106px) {
+                display: none;   
+            }
 
             .navbar-link {
                 margin-right: 48px;
@@ -101,7 +110,7 @@ html {
             padding: 8px 13px;
 
             &::after {
-                content: url("../../public/img/arrow-white.png");
+                content: url("./../img/svg/arrow-right-white.svg");
                 margin-left: 9px;
             }
 
