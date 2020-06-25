@@ -1000,6 +1000,8 @@ html {
       display: flex;
       flex-direction: row;
       align-items: center; }
+      .navbar-container .navbar-nav .navbar-link-wrapper .navbar-link.light a {
+        color: #FFF; }
       @media screen and (max-width: 1106px) {
         .navbar-container .navbar-nav .navbar-link-wrapper {
           display: none; } }
@@ -1063,7 +1065,7 @@ html {
       background-position: -115px 0; } }
   @media screen and (min-width: 1362px) {
     .cover-container {
-      padding-top: 260px; } }
+      padding-top: 210px; } }
   .cover-container .cover-wrapper {
     max-width: 963px;
     margin: 0 auto;
@@ -1246,6 +1248,99 @@ html {
           font-size: 16px;
           font-weight: 400;
           font-family: "Inter"; }
+
+.cover-info-container {
+  padding-top: 153px;
+  background: url("./../img/headerpageinfo.png") no-repeat;
+  background-size: 105%;
+  background-position: -100px -65px; }
+  .cover-info-container .cover-info-wrapper {
+    max-width: 1361px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 55px; }
+    .cover-info-container .cover-info-wrapper .cover-info-title h1 {
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      font-size: 30px;
+      font-weight: bold;
+      line-height: 40px;
+      font-family: "Circular";
+      color: #FFF; }
+      .cover-info-container .cover-info-wrapper .cover-info-title h1 span {
+        font-size: 20px;
+        font-weight: normal;
+        font-family: inherit;
+        color: inherit; }
+
+.choose-project-container {
+  padding: 40px; }
+  .choose-project-container .choose-project-wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 1361px;
+    margin: 0 auto; }
+    .choose-project-container .choose-project-wrapper .choose-title h1 {
+      font-size: 30px;
+      font-family: "Circular";
+      font-weight: 900;
+      color: #5E60CF;
+      line-height: 40px;
+      margin: 0 0 70px;
+      position: relative;
+      background: #FFF; }
+      .choose-project-container .choose-project-wrapper .choose-title h1::before {
+        content: url("./../img/vague.png");
+        position: absolute;
+        z-index: -1;
+        left: -8%;
+        top: -50%; }
+    .choose-project-container .choose-project-wrapper .choose-card-wrapper {
+      display: flex;
+      justify-content: space-between;
+      padding-left: 100px; }
+      .choose-project-container .choose-project-wrapper .choose-card-wrapper .card-1::before {
+        content: url("./../img/1.png"); }
+      .choose-project-container .choose-project-wrapper .choose-card-wrapper .card-2::before {
+        content: url("./../img/2.png");
+        left: -30% !important; }
+      .choose-project-container .choose-project-wrapper .choose-card-wrapper .card-3::before {
+        content: url("./../img/3.png");
+        left: -30% !important; }
+      .choose-project-container .choose-project-wrapper .choose-card-wrapper .card-1::before, .choose-project-container .choose-project-wrapper .choose-card-wrapper .card-2::before, .choose-project-container .choose-project-wrapper .choose-card-wrapper .card-3::before {
+        position: absolute;
+        z-index: -1;
+        top: -105px;
+        left: -21%; }
+      .choose-project-container .choose-project-wrapper .choose-card-wrapper .choose-card {
+        width: 277px;
+        height: 186px;
+        padding: 28px 26px 0;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        background: #FFF;
+        position: relative; }
+        .choose-project-container .choose-project-wrapper .choose-card-wrapper .choose-card h4 {
+          font-size: 18px;
+          font-family: "Inter";
+          font-weight: 400;
+          margin: 0;
+          height: 30%; }
+        .choose-project-container .choose-project-wrapper .choose-card-wrapper .choose-card p {
+          margin: 0 0 10px;
+          font-size: 18px;
+          font-family: "Inter";
+          font-weight: 400;
+          height: 70%; }
+          .choose-project-container .choose-project-wrapper .choose-card-wrapper .choose-card p::before {
+            content: "";
+            display: block;
+            background-color: #56CEE0;
+            height: 3px;
+            width: 38px;
+            margin: 0 0 15px; }
 
 footer {
   position: relative; }
