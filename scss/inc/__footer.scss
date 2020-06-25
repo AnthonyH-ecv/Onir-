@@ -123,6 +123,7 @@ footer {
                     font-family: $circular;
                     background-color: $pink;
                     text-decoration: none;
+                    border-radius: 3px;
                     transition: all .4s ease-in-out;
 
                     &::after {
